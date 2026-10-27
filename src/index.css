@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite-react/dist/**/*.mjs";
+
+@font-face {
+  font-family: 'Cairo, sans-serif';
+  src: url('./assets/Cairo-VariableFont_slnt\,wght.ttf') format('wght.ttf'),
+}
+
+@utility container{
+    margin:auto;
+    padding-inline: .75rem;
+    max-width: 1320px;
+}

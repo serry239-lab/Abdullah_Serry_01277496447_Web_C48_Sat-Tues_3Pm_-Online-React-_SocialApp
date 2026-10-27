@@ -1,0 +1,13 @@
+import axios from "axios";
+
+export async function likePost(postId:string) {
+    const userToken = localStorage.getItem('tkn');
+    const {data} = await axios.put(`${import.meta.env.VITE_BASE_URL}/posts/${postId}/like`,{},
+        {
+            headers:{
+                "Authorization":`Bearer ${userToken} `
+            }
+        }
+    );
+    return data;
+}
